@@ -1,0 +1,270 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.first-two-days,
+.second-two-days {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.time {
+  border: 1px solid black;
+  background-color: #ddd;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-header {
+  background-color: #168c36;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunday-div,
+.monday-div,
+.tuesday-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.sunday-header,
+.monday-header,
+.tuesday-header {
+  background-color: #168c36;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 40px; /* Fixed height to match time header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunday-cell,
+.monday-cell,
+.tuesday-cell {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 40px; /* Fixed height to match time cells */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunday-cell:focus {
+  outline: 2px solid #168c36;
+}
+
+.wednesday-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.wednesday-header {
+  background-color: #168c36;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 40px; /* Fixed height to match other headers */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wednesday-cell {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 40px; /* Fixed height to match other cells */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-two-days {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.thursday-div,
+.friday-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.thursday-header,
+.friday-header {
+  background-color: #168c36;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 40px; /* Fixed height to match other headers */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thursday-cell,
+.friday-cell {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 40px; /* Fixed height to match other cells */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fourth-two-days {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.saturday-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.saturday-header {
+  background-color: #168c36;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saturday-cell {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .time-container {
+    width: 20%;
+  }
+
+  .sunday-div,
+  .monday-div,
+  .tuesday-div {
+    width: 40%;
+  }
+
+  .time,
+  .sunday-cell,
+  .monday-cell,
+  .tuesday-cell {
+    font-size: 12px;
+    padding: 8px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .time-container {
+    width: 40%;
+  }
+
+  .sunday-div,
+  .monday-div,
+  .tuesday-div {
+    width: 37.5%;
+  }
+
+  .time,
+  .sunday-cell,
+  .monday-cell,
+  .tuesday-cell {
+    font-size: 15px;
+    padding: 6px 3px;
+  }
+  .sunday-cell,
+  .monday-cell {
+    width: 100%;
+  }
+}
+@media (max-width: 200px) {
+  .sunday-cell,
+  .monday-cell {
+    width: 100px;
+  }
+}
